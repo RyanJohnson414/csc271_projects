@@ -1,26 +1,25 @@
+/*
+    Name: Ryan Johnson
+    Date: 10/21/26
 
+*/
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    color:white
 }
 
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    color:white
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color:white
 }
 
 .highlight {
@@ -43,4 +42,80 @@ a:visited {
 
 a:hover {
     color: red;
+}
+
+
+.header{
+    font-family: Times New Roman, Times, serif;
+
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+
+    a:link{
+        color: red;
+    }
+}
+
+.content {
+    float: left;
+    width: 90%;
+    margin: 16px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+
+}
+
+.contentCenter {
+    text-align: center;
+    width: 90%;
+    margin: 16px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+
+}
+
+
+
+.images {
+    float: left;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+
+    
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        a {
+            float: none;
+            text-align: left;
+            width: 100%;
+
+        }
+    }
+    .content {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    padding: 20px;
+    font-size: 18px;
+    }
+    
 }
