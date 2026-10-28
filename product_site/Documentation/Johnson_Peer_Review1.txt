@@ -1,0 +1,40 @@
+1-Content & Audience
+Did your peers clearly understand your site’s purpose and target audience?
+What suggestions did they make to improve your site’s content or messaging?
+
+The websites purpose was simple for them to understand with the information being presented plainly and 
+who it was intended for. They suggested to make it more visibly appealing and more accessible.
+
+2-Design & User Experience
+How did your peers respond to your site’s design (layout, color, typography, or organization)?
+Did they find the design effective in communicating your message and engaging users?
+
+They though it looked basic which it does looking like basic HTML I tried using other colors but didnt like the 
+way they looked and I am still deciding how the website should look. they found the design fine if it was just better 
+formatted since it doesnt need to be an interesting website but display the information well but it should still
+look nicer than that and I am still working on deciding the UI.
+
+
+3-Functionality & Performance
+What issues did your peers identify with features or interactivity on your site?
+Did they note any pages or elements that loaded slowly or inconsistently across devices or browsers?
+
+They found missing alt text, missing features such as my email missing from the page and a footer should be added.
+the first load of the page it was slow at loading on second load it was better due to the images loading into the cache,
+after that there was an issue with the form that needed to be fixed.
+
+4-Accessibility & Usability
+What feedback did you receive about accessibility (e.g., alt text, color contrast, keyboard navigation)?
+What can you improve to make your site more inclusive and user-friendly?
+
+I recieved feedback on missing alt text and missing character encoding. Since the peer review I have
+since added alt text to my images and character encoding to each page
+
+
+5-Action Plan
+What did your peers like most about your site?
+What two improvements will you make based on their feedback, and how will you implement them?
+
+They liked that it remained on topic and wasnt distracting away from the main purpose of the content.
+the suggestions I recieved including a header so every page can link to every other page which I have since added,
+another feature that was included was adding alt text for images which has also been done on this branch.
