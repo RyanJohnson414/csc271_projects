@@ -1,0 +1,24 @@
+My idea is to create a Hockey Position Guide for my hockey website. The script will be located on my hockeyplayer.html page.
+The purpose of the script is to help visitors learn about the three main positions in ice hockey: goalie, defender and forward.
+The website will have a dropdown menu where users can select a position. Once they select a position, JavaScript will display information explaining what that player does and their responsibilities during a hockey game.
+This will make my website more interactive and help beginners understand the different roles of hockey players.
+
+The goals I want to achieve with this script are:
+
+Improve user experience by making the website more interactive.
+Help visitors understand the different hockey positions.
+Allow users to select a position using a dropdown menu.
+Display different information depending on the user's selection.
+Make the player page more interesting and educational.
+The script will use basic JavaScript features such as variables, functions, if statements and else if statements.
+
+Task Breakdown:
+Create a heading called "Hockey Position Guide".
+Create a dropdown menu containing three options: goalie, defender and forward.
+Allow the user to select a position from the dropdown menu.
+Use JavaScript to capture the user's selection.
+Use if and else if statements to check which position was selected.
+Display the correct information about the selected position.
+If no position is selected, display a message asking the user to choose one.
+Test the script to make sure all three positions display the correct information.
+

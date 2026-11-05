@@ -27,7 +27,7 @@
     <body>
         <div class="header">
         <h1>Rinkside Homepage</h1>
-        <h2>Home  Teams  Scores  Standings </h2>
+        <h3>Home  Teams  Scores  Standings </h3>
         <hr>
        <p>The intention of this page is to be a hub to get to each section of the website when they are complete with each
         team having their own independent page which can be accessed through here and players of the week and a players section also on this page 
@@ -128,7 +128,29 @@
        </div>
        <!--Small examples once again to showcase the idea not the complete setup could be changed to recent scores if current scores beyond scope of class-->
 
+        <h2>Hockey Position Guide</h2>
 
+        <p class="descriptor">Click a button to learn about each position!</p>
+
+        <button id="goalieButton">Goalie</button> 
+
+        <button id="defenderButton">Defender</button>
+
+        <button id="forwardButton">Forward</button>
+
+        <p id="positionInfo">Position information will appear here.</p>
+
+        <p id="playerCount"></p>
+
+        <h2>Calculate Points</h2>
+        <label>Goals:</label>
+        <input type="number" id="goals" value="0" min="0">
+
+        <label>Assists:</label>
+        <input type="number" id="assists" value="0" min="0">
+
+        <button id="calculateButton">Calculate Points</button>
+        <p class="pointsInfo">Your total points will appear here.</p>
         <div class="content">
             <h3>Links:</h3>
             <a href="hockeyhome.html">Home</a>
@@ -139,7 +161,7 @@
             <p> </p>
             <a href="mailto:ryan.johnson@uri.edu">Contact Me!</a>
     </div>
-
+    <script src="script.js"></script>
     </body>
 
 </html>
