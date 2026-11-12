@@ -1,0 +1,19 @@
+Ryan Johnson 
+11/11/26
+
+Decision tree: Find your hockey position
+1- do you like shooting and setting up attacks?
+Yes → Forward
+No → Continue.
+
+2- Would you rather protect your team's net and stop shots?
+
+Yes → Goalie
+No → Continue.
+
+3- Do you enjoy blocking shots, stopping opponents, and helping protect your team's defensive zone?
+
+Yes → Defenseman
+No → Forward
+
+![alt text](Flowchart.png)

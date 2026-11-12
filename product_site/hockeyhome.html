@@ -152,6 +152,30 @@
         <button id="calculateButton">Calculate Points</button>
         <p class="pointsInfo">Your total points will appear here.</p>
         </div>
+        <div class="content" id="hockeyFacts">
+            <h2>Hockey Facts</h2>
+            <ul id="factsList"></ul>
+        </div>
+        <div class="content">
+            <p>Answer these three questions to find out which hockey position fits you best!</p>
+            <p>1. Do you enjoy scoring goals and attacking the opponent's net?</p>
+            <input type="radio" name="scoring" value="yes"> Yes
+            <input type="radio" name="scoring" value="no"> No
+
+            <p>2. Would you rather protect your team's net and stop shots?</p>
+            <input type="radio" name="goalie" value="yes"> Yes
+            <input type="radio" name="goalie" value="no"> No
+
+            <p>3. Do you enjoy blocking shots and stopping opponents?</p>
+            <input type="radio" name="defending" value="yes"> Yes
+            <input type="radio" name="defending" value="no"> No
+
+            <button id="submitQuiz">Submit Answers</button>
+
+            <h3 id="positionResult"></h3>
+        </div>
+
+
         <div class="content">
             <h3>Links:</h3>
             <a href="hockeyhome.html">Home</a>
@@ -163,6 +187,7 @@
             <a href="mailto:ryan.johnson@uri.edu">Contact Me!</a>
         </div>
     <script src="script.js"></script>
+    <script src="assignment9.js"></script>
     </body>
 
 </html>
