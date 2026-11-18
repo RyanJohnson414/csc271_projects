@@ -70,7 +70,7 @@ if(statsList != null) {
 function displayHockeyFacts() {
     var hockeyfacts = ["The first organized ice hockey game was played in Montreal in 1875.","The Stanley Cup is the oldest professional sports trophy in North America.","The NHL was founded in 1917 with four teams: Montreal Canadiens, Toronto Arenas, Ottawa Senators, and Quebec Bulldogs.","Wayne Gretzky holds the record for most career points in the NHL with 1,963.","The average speed of an NHL player is around 20 mph.","Ice hockey is played with six players on each team: five skaters and one goalie.","The first NHL All-Star Game was held in 1947 in Toronto.","The longest NHL game in history lasted 176 minutes and 30 seconds.","The puck is made of vulcanized rubber and is kept frozen before each game."]
 
-    var factsList = document.getElementById("hockeyFacts");
+    var factsList = document.getElementById("factsList");
 
     if (factsList != null) {
         for (var i = 0; i < hockeyfacts.length; i++) {
