@@ -72,8 +72,6 @@ function displayHockeyFacts() {
 
     var factsList = document.getElementById("factsList");
 
-    var factsList = document.getElementById("factsList");
-
     if (factsList != null) {
         factsList.innerHTML = "";
         for (var i = 0; i < hockeyfacts.length; i++) {
