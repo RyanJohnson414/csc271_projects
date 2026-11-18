@@ -1,0 +1,21 @@
+Ryan Johnson
+Nov 17, 2026
+
+1- Identify Reusable Code
+The first step I am going to take is to consolidate my JavaScript code into a single external file to make it easier to read, understand, and maintain. The scripts I created in my previous assignment can be separated into individual functions because each one performs a specific task.
+The first section I plan to modularize is the points calculator. This will become a function that takes goals and assists as parameters and returns the total number of points.
+The second section is the hockey facts display. This can become a basic function without parameters or a return value because its only purpose is to display the hockey facts on the page when it loads.
+Finally, the third section is the quiz that recommends which hockey position best suits the user. I plan to turn the recommendation logic into a function that accepts the user's answers as parameters and returns their preferred position. This will allow the button's click event to remain simple instead of containing all the conditional statements itself.
+
+2- Plan Your Functions
+By turning each of these sections into functions, it will be easier for me to read my code and refer back to specific sections when I need to make changes. This is especially useful for something like the points calculator because I could eventually move it to a separate subpage and use it independently without having to rewrite the calculation.
+The hockey facts display is mainly being converted into a function to improve organization and meet the assignment requirements. I do not necessarily see it as something that needs to be reused frequently unless I decide to expand it in the future. For example, I could make it randomly select a hockey fact every time the page loads rather than displaying the same facts in the same order.
+The favorite position quiz will benefit from modularization because it separates the decision-making logic from the button click event. I can define the conditions inside the function and determine which answers take priority when recommending a position. This makes the logic easier to understand, especially when deciding which answers are mutually exclusive and which recommendations should take priority. It also makes it easier to change or expand the quiz without making the button event unnecessarily complicated.
+Overall, these functions will reduce unnecessary code inside event listeners, make the script easier to navigate, and simplify future debugging and updates.
+
+3- Proposed New Functions and Features
+In the future, possibly over Thanksgiving break, I would like to add more functionality and expand the hockey website so it becomes more interesting and interactive.
+One possible addition would be a hockey points and scoring system similar to the way soccer statistics are tracked. Instead of only calculating basic goals and assists, I could introduce additional scoring categories and calculate a player's overall performance score. This could take multiple statistics as parameters and return a calculated score. It would give visitors another way to compare player performance.
+Another feature I would like to explore is more advanced hockey analytics. I could create functions that calculate percentages and organize player statistics, such as offensive zone time, defensive zone performance, shots on goal, and skating speed. These functions could take player statistics as parameters and return calculated results that could be displayed on the website.
+Finally, I could create a function that automatically updates player statistics across different pages. Rather than manually changing the same statistics in multiple places, I could store the information in one location and use a loop to update the appropriate sections of each page. This would make maintaining the website much easier as I add more pages and information.
+These additions would help make the website more interactive while also giving me opportunities to practice using functions, parameters, return values, arrays, and loops in more advanced ways.
