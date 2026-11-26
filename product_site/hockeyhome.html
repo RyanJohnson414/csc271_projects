@@ -141,17 +141,50 @@
         <p id="positionInfo">Position information will appear here.</p>
 
         <p id="playerCount"></p>
-
         <h2>Calculate Points</h2>
-        <label>Goals:</label>
-        <input type="number" id="goals" value="0" min="0">
 
-        <label>Assists:</label>
-        <input type="number" id="assists" value="0" min="0">
+        <form id="pointsForm">
 
-        <button id="calculateButton">Calculate Points</button>
-        <p class="pointsInfo">Your total points will appear here.</p>
+            <input type="number" id="goals">
+            <label for="goals">Goals:</label>
+            
+            <p id="goalsFeedback"></p>
+            <input type="number" id="assists">
+            <label for="assists">Assists:</label>
+            
+            <p id="assistsFeedback"></p>
+            
+            <button type="submit" id="calculateButton">Calculate Points</button>
+            
+            <p class="pointsInfo">Your total points will appear here.</p>
+            
+            <p id="formFeedback"></p>
+        </form>
         </div>
+         <div class="content" id="hockeyFacts">
+            <h2>Hockey Facts</h2>
+            <ul id="factsList"></ul>
+        </div>
+        <div class="content">
+            <p>Answer these three questions to find out which hockey position fits you best!</p>
+            <p>1. Do you enjoy scoring goals and attacking the opponent's net?</p>
+            <input type="radio" name="scoring" value="yes"> Yes
+            <input type="radio" name="scoring" value="no"> No
+
+            <p>2. Would you rather protect your team's net and stop shots?</p>
+            <input type="radio" name="goalie" value="yes"> Yes
+            <input type="radio" name="goalie" value="no"> No
+
+            <p>3. Do you enjoy blocking shots and stopping opponents?</p>
+            <input type="radio" name="defending" value="yes"> Yes
+            <input type="radio" name="defending" value="no"> No
+
+            <button id="submitQuiz">Submit Answers</button>
+
+            <h3 id="positionResult"></h3>
+        </div>
+
+
         <div class="content">
             <h3>Links:</h3>
             <a href="hockeyhome.html">Home</a>
@@ -163,6 +196,7 @@
             <a href="mailto:ryan.johnson@uri.edu">Contact Me!</a>
         </div>
     <script src="script.js"></script>
+    <script src="events.js"></script>
     </body>
 
 </html>

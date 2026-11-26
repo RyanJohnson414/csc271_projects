@@ -54,13 +54,89 @@ document.getElementById("forwardButton").addEventListener("click", function() {
 });
 
 
+// looked up lists with loops online
+var playerStats = ["Skating Speed: 22.89 MPH","Hardest Shot: 82.94 MPH","Shots on Goal: 78","Defensive Zone %: 42.1%","Neutral Zone %: 18.2%","Offensive Zone %: 39.7%"];
+var statsList = document.getElementById("playerStats");
 
-document.getElementById("calculateButton").addEventListener("click", function() {
+if(statsList != null) {
+    for (var i = 0; i < playerStats.length; i++) {
+        var li = document.createElement("li");
+        li.textContent = playerStats[i];
+        statsList.appendChild(li);
+    }
+}
 
-    var goals = Number(document.getElementById("goals").value);
-    var assists = Number(document.getElementById("assists").value);
+//Function with no parameters and no return value. (basic function)
+function displayHockeyFacts() {
+    var hockeyfacts = ["The first organized ice hockey game was played in Montreal in 1875.","The Stanley Cup is the oldest professional sports trophy in North America.","The NHL was founded in 1917 with four teams: Montreal Canadiens, Toronto Arenas, Ottawa Senators, and Quebec Bulldogs.","Wayne Gretzky holds the record for most career points in the NHL with 1,963.","The average speed of an NHL player is around 20 mph.","Ice hockey is played with six players on each team: five skaters and one goalie.","The first NHL All-Star Game was held in 1947 in Toronto.","The longest NHL game in history lasted 176 minutes and 30 seconds.","The puck is made of vulcanized rubber and is kept frozen before each game."]
 
-    var totalPoints = goals + assists;
+    var factsLis = document.getElementById("factsList");
+    console.log("chceck 1");
+    if (factsLis != null) {
+        factsLis.innerHTML = "";
+        for (var i = 0; i < hockeyfacts.length; i++) {
+            console.log("chcecking");
+            var li = document.createElement("li");
+            li.textContent = hockeyfacts[i];
+            factsLis.appendChild(li);
+        }
+    }
+}
 
-    pointsInfo.innerHTML = "Your total points are: <strong>" + totalPoints + "</strong>";
-});
+displayHockeyFacts();
+
+// Function with parameters. ( > 2 parameters)
+function recommendPosition(scoring, goalie, defending) {
+
+    if (scoring === "yes" || (goalie === "no" && defending === "no")) {
+        return "Forward";
+    }
+
+    else if (goalie === "yes") {
+        return "Goalie";
+    }
+
+    else if (defending === "yes") {
+        return "Defenseman";
+    }
+
+    return "No recommendation available";
+}
+
+// Function that returns a value. (return value)
+// function calculateTotalPoints(goals, assists) {
+//     return goals + assists;
+// }
+
+var submitButton = document.getElementById("submitQuiz");
+if(submitButton != null) {
+    submitButton.addEventListener("click", function() {
+
+        var scoring = document.querySelector('input[name="scoring"]:checked');
+        var goalie = document.querySelector('input[name="goalie"]:checked');
+        var defending = document.querySelector('input[name="defending"]:checked');
+
+        var position = "";
+
+        if (scoring === null || goalie === null || defending === null) {
+            document.getElementById("positionResult").textContent = "Please answer all three questions!";
+        }
+
+     else{
+        var position = recommendPosition(scoring.value, goalie.value, defending.value);
+        document.getElementById("positionResult").textContent  = "Your recommended hockey position is: " + position + "!";
+     }
+
+
+    });
+}
+
+// document.getElementById("calculateButton").addEventListener("click", function() {
+
+//     var goals = Number(document.getElementById("goals").value);
+//     var assists = Number(document.getElementById("assists").value);
+
+//     var totalPoints = calculateTotalPoints(goals, assists);
+
+//     pointsInfo.innerHTML = "Your total points are: <strong>" + totalPoints + "</strong>";
+// });
