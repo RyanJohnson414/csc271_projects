@@ -141,18 +141,27 @@
         <p id="positionInfo">Position information will appear here.</p>
 
         <p id="playerCount"></p>
-
         <h2>Calculate Points</h2>
-        <label>Goals:</label>
-        <input type="number" id="goals" value="0" min="0">
 
-        <label>Assists:</label>
-        <input type="number" id="assists" value="0" min="0">
+        <form id="pointsForm">
 
-        <button id="calculateButton">Calculate Points</button>
-        <p class="pointsInfo">Your total points will appear here.</p>
+            <input type="number" id="goals">
+            <label for="goals">Goals:</label>
+            
+            <p id="goalsFeedback"></p>
+            <input type="number" id="assists">
+            <label for="assists">Assists:</label>
+            
+            <p id="assistsFeedback"></p>
+            
+            <button type="submit" id="calculateButton">Calculate Points</button>
+            
+            <p class="pointsInfo">Your total points will appear here.</p>
+            
+            <p id="formFeedback"></p>
+        </form>
         </div>
-        <div class="content" id="hockeyFacts">
+         <div class="content" id="hockeyFacts">
             <h2>Hockey Facts</h2>
             <ul id="factsList"></ul>
         </div>
@@ -187,6 +196,7 @@
             <a href="mailto:ryan.johnson@uri.edu">Contact Me!</a>
         </div>
     <script src="script.js"></script>
+    <script src="events.js"></script>
     </body>
 
 </html>

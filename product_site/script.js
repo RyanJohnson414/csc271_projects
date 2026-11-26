@@ -1,5 +1,5 @@
 // Name: Ryan Johnson
-// Date: November 4, November 11, November 17, 2026
+// Date: November 4, 2026
 // Description: JavaScript for Hockey Position Guide and Points Calculator.
 
 
@@ -104,9 +104,9 @@ function recommendPosition(scoring, goalie, defending) {
 }
 
 // Function that returns a value. (return value)
-function calculateTotalPoints(goals, assists) {
-    return goals + assists;
-}
+// function calculateTotalPoints(goals, assists) {
+//     return goals + assists;
+// }
 
 var submitButton = document.getElementById("submitQuiz");
 if(submitButton != null) {
@@ -131,13 +131,12 @@ if(submitButton != null) {
     });
 }
 
-document.getElementById("calculateButton").addEventListener("click", function() {
+// document.getElementById("calculateButton").addEventListener("click", function() {
 
-    var goals = Number(document.getElementById("goals").value);
-    var assists = Number(document.getElementById("assists").value);
+//     var goals = Number(document.getElementById("goals").value);
+//     var assists = Number(document.getElementById("assists").value);
 
-    var totalPoints = calculateTotalPoints(goals, assists);
+//     var totalPoints = calculateTotalPoints(goals, assists);
 
-    pointsInfo.innerHTML = "Your total points are: <strong>" + totalPoints + "</strong>";
-});
-
+//     pointsInfo.innerHTML = "Your total points are: <strong>" + totalPoints + "</strong>";
+// });
