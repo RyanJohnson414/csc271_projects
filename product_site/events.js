@@ -25,15 +25,7 @@ function onAssistsFocus() {
 goalsInput.addEventListener("focus", onGoalsFocus);
 assistsInput.addEventListener("focus", onAssistsFocus);
 
-function validateGoals(event) {
-    //page was reloading every time asked AI for solution:
-    // provided code beforehand: the page is reloading everytime the button is clicked why is this happening? 
-    //The page is reloading because your Calculate Points button is now a form submission button. By default, HTML forms submit their data and navigate or reload the page.
-    
-    //Your JavaScript should prevent this behavior using:
-    //event.preventDefault();
-    //If the page is still reloading, your submit event listener is most likely not being executed.
-    event.preventDefault();
+function validateGoals() {
 
     var goals = Number(goalsInput.value);
 
@@ -65,8 +57,16 @@ function validateAssists() {
 goalsInput.addEventListener("blur", validateGoals);
 assistsInput.addEventListener("blur", validateAssists);
 
-function calculatePoints() {
+function calculatePoints(event) {
 
+    //page was reloading every time asked AI for solution:
+    // provided code beforehand: the page is reloading everytime the button is clicked why is this happening? 
+    //The page is reloading because your Calculate Points button is now a form submission button. By default, HTML forms submit their data and navigate or reload the page.
+    
+    //Your JavaScript should prevent this behavior using:
+    //event.preventDefault();
+    //If the page is still reloading, your submit event listener is most likely not being executed.
+    event.preventDefault();
     
     var validGoals = validateGoals();
     var validAssists = validateAssists();
